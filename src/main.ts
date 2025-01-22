@@ -3,6 +3,10 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
+import registerCommonComponent from "./core/register-common-component";
+
+Vue.use(registerCommonComponent);
+
 Vue.config.productionTip = false;
 
 new Vue({
